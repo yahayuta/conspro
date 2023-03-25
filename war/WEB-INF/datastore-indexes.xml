@@ -1,0 +1,189 @@
+<datastore-indexes autoGenerate="false">
+
+  	<!-- WEB全在庫一覧 -->
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="WEB_DISP" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+    </datastore-index>
+    
+  	<!-- WEB在庫一覧 -->
+  	<datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="WEB_DISP" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+        <property name="WEB_DISP" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="MANUFACTURER" direction="asc"/>
+        <property name="WEB_DISP" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+  	<!-- トップ5 -->
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="WEB_DISP" direction="asc"/>
+        <property name="WEB_DISP_DATE" direction="desc"/>
+    </datastore-index>
+       
+ 	<!-- 在庫管理一覧 -->
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+        <property name="MANUFACTURER" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="MANUFACTURER" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="BUYER" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="SELL_PAY_DATE" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+        <property name="ORDER_PAY_DATE" direction="asc"/>
+    </datastore-index>
+ 	<datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="SELL_MONTH" direction="desc"/>
+        <property name="SELL_PAY_DATE" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="WEB_DISP" direction="asc"/>
+        <property name="WEB_DISP_DATE" direction="desc"/>
+        <property name="TYPE" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+    <!-- 在庫詳細 -->
+    <datastore-index kind="DailyReport" ancestor="false" source="manual">
+        <property name="SERIALNO" direction="asc"/>
+        <property name="WORK_DATE" direction="desc"/>
+    </datastore-index>
+
+ 	<!-- 棚卸在庫一覧出力-->
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="SELL_PAY_DATE" direction="asc"/>
+        <property name="ORDER_PAY_DATE" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+    </datastore-index>
+      
+ 	<!-- 販売用在庫一覧出力-->
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="BUYER" direction="asc"/>
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+    </datastore-index>
+
+ 	<!--  販売用在庫一覧出力-->
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="SELL_MONTH" direction="asc"/>
+        <property name="SELL_PAY_DATE" direction="asc"/>
+        <property name="ORDER_PAY_DATE" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+    </datastore-index>
+    
+    <!--  締め在庫-->
+    <datastore-index kind="InventoryRecord" ancestor="false" source="manual">
+        <property name="SELL_MONTH" direction="asc"/>
+        <property name="SELL_PAY_DATE" direction="asc"/>
+    </datastore-index>
+    
+    <!--  日報-->
+    <datastore-index kind="DailyReport" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="WORK_DATE" direction="desc"/>
+        <property name="WORKER" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="DailyReport" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="NAME" direction="asc"/>
+        <property name="SERIALNO" direction="asc"/>
+        <property name="WORK_DATE" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="DailyReport" ancestor="false" source="manual">
+        <property name="NAME" direction="asc"/>
+        <property name="SERIALNO" direction="asc"/>
+        <property name="WORK_DATE" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="DailyReport" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="WORKER" direction="asc"/>
+        <property name="WORK_DATE" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="DailyReport" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="WORK_DATE" direction="asc"/>
+    </datastore-index>
+    
+    <!-- レンタル在庫一覧-->
+ 	<datastore-index kind="RentalInventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="TYPE" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="RentalInventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="NAME" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="RentalInventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="MANUFACTURER" direction="asc"/>
+    </datastore-index>
+        <datastore-index kind="RentalInventoryRecord" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="STATUS" direction="asc"/>
+    </datastore-index>
+   
+    <!-- レンタル注文一覧-->
+    <datastore-index kind="RentalOrder" ancestor="false" source="manual">
+        <property name="RENTAL_INVENTORY_ID" direction="asc"/>
+        <property name="DATA_FLG" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="RentalOrder" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="NAME" direction="asc"/>
+    </datastore-index>
+    
+    <!-- レンタル注文請求履歴 --> 
+    <datastore-index kind="RentalOrderInvoiceHistory" ancestor="false" source="manual">
+        <property name="CLOSE_REQ" direction="asc"/>
+        <property name="RENTAL_ORDER_ID" direction="asc"/>
+        <property name="REQUEST_YM" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="RentalOrderInvoiceHistory" ancestor="false" source="manual">
+        <property name="RENTAL_ORDER_ID" direction="asc"/>
+        <property name="REQUEST_YM" direction="desc"/>
+    </datastore-index>
+    
+    <!-- レンタル注文引合情報 -->
+    <datastore-index kind="PreRentalOrder" ancestor="false" source="manual">
+        <property name="DATA_FLG" direction="asc"/>
+        <property name="RENTAL_INVENTORY_ID" direction="asc"/>
+        <property name="START_DATE" direction="desc"/>
+    </datastore-index>
+</datastore-indexes>

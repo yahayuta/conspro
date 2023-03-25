@@ -1,0 +1,18 @@
+cron:
+- description: "レンタル注文締め日チェックバッチ"
+  url: /FTCBatchChecklBillCond
+  schedule: every day 00:10
+  timezone: Japan
+- description: "レンタル注文売上計上バッチ"
+  url: /FTCBatchCreateRentalSales
+  schedule: every day 00:30
+  timezone: Japan
+- description: "レンタル注文締めバッチ"
+  url: /FTCBatchCloseRentalOrder
+  schedule: every day 01:00
+  timezone: Japan
+- description: "メンテナンスバッチ"
+  url: /FTCBatchMaintnance
+  schedule: every day 02:00
+  timezone: Japan
+  
