@@ -38,7 +38,7 @@ public class FTCCommonUtil {
 	private static DecimalFormat formatter = new DecimalFormat("#,###");
 	
 	/** 請求必要であることのアラート文字列 */
-	private static String REQ_ALERT_STR = "style=\"background-color:red !important;\"";
+	private static String REQ_ALERT_STR = " style=\"background-color:red !important;\"";
 	
 	/**
 	 * NULL置換
