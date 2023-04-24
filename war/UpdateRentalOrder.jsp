@@ -91,6 +91,9 @@
 		if (obj.AMOUNT_CHK.checked) {
 			obj.TOTAL.value = parseFloat(obj.TOTAL.value) + parseFloat(obj.AMOUNT.value);
 		}
+		if (obj.SUPPORT_CHK.checked) {
+			obj.TOTAL.value = parseFloat(obj.TOTAL.value) + parseFloat(obj.SUPPORT_FEE.value);
+		}
 		if (obj.TRANS_FEE_CHK.checked) {
 			obj.TOTAL.value = parseFloat(obj.TOTAL.value) + parseFloat(obj.TRANS_FEE.value);
 		}
@@ -173,7 +176,7 @@
 </tr>
 <tr>
 <td>サポート料金</td>
-<td><input type="text" name="PRICE_DAY" value="<%= FTCCommonUtil.parseDoubleString(rentalOrder.getProperty("PRICE_SUPPORT")) %>" disabled></td>
+<td><input type="text" name="PRICE_SUPPORT" value="<%= FTCCommonUtil.parseDoubleString(rentalOrder.getProperty("PRICE_SUPPORT")) %>" disabled></td>
 </tr>
 <tr>
 <tr>
