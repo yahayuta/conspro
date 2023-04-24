@@ -208,7 +208,7 @@
 </tr>
 <tr>
 <td><input type="text" name="FEE6_NAME"></td>
-<td><input type="text" name="FEE6" value="0" style="text-align:right;">（数字のみ入力可能）<input type="text" name="FEE56_MEMO"></td>
+<td><input type="text" name="FEE6" value="0" style="text-align:right;">（数字のみ入力可能）<input type="text" name="FEE6_MEMO"></td>
 </tr>
 <tr>
 <td>合計金額</td>
